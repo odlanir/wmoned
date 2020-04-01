@@ -1,9 +1,9 @@
+---
+
 - hosts: windows
   tasks:
   
   - name: Create directory (YAML format works)
     win_file:
-      path: '{{ item }}'
+      path: c:\temp\folders4
       state: directory
-    loop: '{{ C:\test\tmp1 }}'   
-  
