@@ -7,6 +7,6 @@
   win_file:
     path: '{{ item }}'
     state: directory
-  loop:
-    - 'C:\Automation\bron\latest_zorgned_release'
+    loop:
+      - 'C:\Automation\bron\latest_zorgned_release'
     
