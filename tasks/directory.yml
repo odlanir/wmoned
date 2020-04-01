@@ -6,5 +6,5 @@
       state: directory
     
     loop:
-      - {{ C:\test\tmp1 }}
-      - {{ C:\test\tmp2 }}
+      - "{{ C:\test\tmp1 }}"
+      - "{{ C:\test\tmp2 }}"
