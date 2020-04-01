@@ -1,1 +1,17 @@
 ---
+
+- name: Create directories for Wmoned
+  win_file:
+    path: '{{ item }}'
+    state: directory
+  loop:
+    - '{{ wmoned_app_bron_dir }}'
+    - '{{ wmoned_iis_webroot_dir }}'
+    - '{{ wmoned_iis_webroot_stuf_dir }}'
+    - '{{ wmoned_iis_webroot_wmoned_dir }}'
+    - '{{ wmoned_iis_webroot_wmonedservices_dir }}'
+    - '{{ wmoned_approot_dir }}'
+    - '{{ wmoned_approot_configuratie_dir }}'
+    - '{{ wmoned_approot_licentie_dir }}'
+    - '{{ wmoned_progroot_dir }}'
+    - '{{ wmoned_progroot_zorgnedservice_dir }}'
