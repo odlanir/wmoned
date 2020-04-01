@@ -2,9 +2,9 @@
   tasks:
   - name: Create directory (YAML format works)
     win_file:
-      path: C:\test\tmp
+      path: '{{ item }}'
       state: directory
     
-    win_file:
-      path: C:\test\tmp1
-      state: directory
+    loop:
+    - C:\test\tmp1
+    - C:\test\tmp2
