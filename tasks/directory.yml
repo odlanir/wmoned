@@ -4,3 +4,7 @@
     win_file:
       path: C:\test\tmp
       state: directory
+    
+    win_file:
+      path: C:\test\tmp1
+      state: directory
