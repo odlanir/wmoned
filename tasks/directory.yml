@@ -1,0 +1,6 @@
+- hosts: windows
+  tasks:
+  - name: Create directory (YAML format works)
+    win_file:
+      path: C:\test\tmp
+      state: directory
