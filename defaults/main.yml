@@ -1,0 +1,23 @@
+---
+
+# General variables for WmoNed
+wmoned_zip_file: zorgned_2018-5.4.zip
+wmoned_app_bron_dir: C:\Automation\bron\latest_zorgned_release
+wmoned_app_bron_stuf_files: '{{ wmoned_app_bron_dir }}\StUF-service'
+wmoned_app_bron_applicatie_files: '{{ wmoned_app_bron_dir }}\applicatie'
+wmoned_app_bron_webservice_files: '{{ wmoned_app_bron_dir }}\Webservice'
+wmoned_app_bron_windowsService_files: '{{ wmoned_app_bron_dir }}\Windows Service'
+wmoned_iis_webroot_dir: C:\app\inetpub\wwwroot
+wmoned_iis_webroot_stuf_dir: '{{ wmoned_iis_webroot_dir }}\Stuf'
+wmoned_iis_webroot_wmoned_dir: '{{ wmoned_iis_webroot_dir }}\Wmoned'
+wmoned_iis_webroot_wmonedservices_dir: '{{ wmoned_iis_webroot_dir }}\Wmonedservices'
+wmoned_approot_dir: C:\app\Wmoned
+wmoned_approot_configuratie_dir: '{{ wmoned_approot_dir }}\configuratie'
+wmoned_approot_licentie_dir: '{{ wmoned_approot_dir }}\licentie'
+wmoned_progroot_dir: 'C:\Program Files\ZorgNed Automatisering'
+wmoned_progroot_zorgnedservice_dir: '{{ wmoned_progroot_dir }}\ZorgnedService'
+wmoned_root_download_url: 'https://www.zorgned.nl/downloads/zorgned/20'
+wmoned_zip_download_url: '{{ root_download_url }}/'{ wmoned_zip_file }'
+#wmoned_root_download_url: 'https://nexusrepo.amsterdam.nl/repository/Automation-binaries'
+#wmoned_download_url: '{{ root_download_url }}/xxx-xxx-xxxx'
+#wmoned_zip_file: ZorgNed_2019-10.9.zip

@@ -1,2 +1,3 @@
 # wmoned
-Test omgeving voor wmoned
+
+Automated install WMO Ned
