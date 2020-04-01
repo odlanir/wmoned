@@ -1,3 +1,5 @@
+---
+
 - hosts: windows
   tasks:
   - name: Create directory structure
