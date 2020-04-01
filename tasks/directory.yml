@@ -2,12 +2,11 @@
 
 - hosts: windows
   tasks:
-  - name: Create directory structure
-    win_file:
-      path: C:\Temp\folder\subfolder
-      state: directory
-      
-  - name: Create directory structure
-    win_file:
-      path: C:\Temp\folder\subfolder1
-      state: directory
+
+- name: Create directories for Wmoned
+  win_file:
+    path: '{{ item }}'
+    state: directory
+  loop:
+    - 'C:\Automation\bron\latest_zorgned_release'
+    
