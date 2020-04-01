@@ -1,0 +1,4 @@
+---
+
+- name: Restart wmoned iis
+  win_shell: iisreset
