@@ -8,5 +8,5 @@
     path: '{{ item }}'
     state: directory
     loop:
-      - 'C:\Automation\bron\latest_zorgned_release'
+      - C:\Automation\bron\latest_zorgned_release
     
