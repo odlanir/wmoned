@@ -1,12 +1,11 @@
----
-
 - hosts: windows
   tasks:
-
-- name: Create directories for Wmoned
+  
+  - name: Create directory (YAML format works)
     win_file:
-      path: '{{ item }}'
+      path: C:\test\tmp
       state: directory
-    loop:
-      - C:\Automation\bron\latest_zorgned_release
     
+    win_file:
+      path: C:\test\tmp1
+      state: directory
