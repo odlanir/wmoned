@@ -7,7 +7,7 @@
   tasks:
   - name: Create directory (YAML format works)
     win_file:
-      path: "{{ item }}"
+      path={{ item }}
       state: directory
     
-    loop: '{{ directory }}'
+    loop: "{{ directory }}"
