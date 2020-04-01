@@ -4,3 +4,8 @@
     win_file:
       path: C:\Temp\folder\subfolder
       state: directory
+      
+  - name: Create directory structure
+    win_file:
+      path: C:\Temp\folder\subfolder1
+      state: directory
