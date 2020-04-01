@@ -8,6 +8,6 @@
   - name: Create directory (YAML format works)
     win_file:
       path={{ item }}
-      state: directory
+      state=directory
     
     loop: "{{ directory }}"
