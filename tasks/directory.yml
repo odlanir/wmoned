@@ -10,4 +10,4 @@
       path: "{{ item }}"
       state: directory
     
-    loop: "{{ directory }}"
+    loop: '{{ directory }}'
