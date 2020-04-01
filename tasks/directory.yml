@@ -1,8 +1,8 @@
 - hosts: windows
   vars:
     directory:
-     - C\test\tmp1
-     - C\test\tmp2
+     - C:\test\tmp1
+     - C:\test\tmp2
    
   tasks:
   - name: Create directory (YAML format works)
