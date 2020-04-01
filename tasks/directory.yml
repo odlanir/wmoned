@@ -1,13 +1,6 @@
 - hosts: windows
-  vars:
-    directory:
-     - C:\test\tmp1
-     - C:\test\tmp2
-   
   tasks:
-  - name: Create directory (YAML format works)
-    win_file:
-      path={{ item }}
-      state=directory
-    
-    loop: "{{ directory }}"
+  - name: Create directory structure
+  win_file:
+    path: C:\Temp\folder\subfolder
+    state: directory
