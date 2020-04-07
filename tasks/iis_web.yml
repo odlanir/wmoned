@@ -1,0 +1,7 @@
+---
+
+- name: "Restart the IIS Site"
+  win_iis_website:
+    name : "dummy_website"
+    state: "restarted"
+  tags: "restart"
