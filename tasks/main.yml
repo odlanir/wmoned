@@ -2,8 +2,8 @@
 
 - name: Create directories for Wmoned
   win_file:
-  path: '{{ item }}'
-  state: directory
+    path: '{{ item }}'
+    state: directory
   loop:
     - 'C:\Automation\bron\latest_zorgned_release'
     - '{{ wmoned_iis_webroot_dir }}'

@@ -2,7 +2,7 @@
 
 - name: Copy files and folders for wmoned webservices
   win_copy:
-      src: '{{ wmoned_app_bron_stuf_files }}'
-      dest: '{{ wmoned_iis_webroot_stuf_dir }}\'
-      remote_src: no
+    src: '{{ wmoned_app_bron_stuf_files }}'
+    dest: '{{ wmoned_iis_webroot_stuf_dir }}\'
+    remote_src: no
   notify: Restart wmoned iis
